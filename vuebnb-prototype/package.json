@@ -16,5 +16,8 @@
   "dependencies": {
     "font-awesome": "^4.7.0",
     "vue": "^2.3.0"
+  },
+  "devDependencies": {
+    "open-sans-all": "^0.1.3"
   }
 }
