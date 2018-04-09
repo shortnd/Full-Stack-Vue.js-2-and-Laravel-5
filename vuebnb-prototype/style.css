@@ -66,6 +66,11 @@ hr {
   white-space: pre-wrap;
 }
 
+.about p.contracted {
+  height: 250px;
+  overflow: hidden;
+}
+
 .header {
   height: 320px;
 }
@@ -76,6 +81,32 @@ hr {
   background-position: 50% 50%;
   background-color: #f5f5f5;
   height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+button {
+  border-radius: 4px;
+  border: 1px solid #c4c4c4;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  line-height: 1.43;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  background: white;
+  color: #484848;
+  padding: 7px 18px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.header .header-img .view-photos {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
 
 .list {
@@ -101,6 +132,33 @@ hr {
 
 .list .list-item > i {
   width: 35px;
+}
+
+button {
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.about button.more {
+  background: transparent;
+  border: 0;
+  color: #008489;
+  cursor: pointer;
+  padding: 0;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.about button.more:hover,
+.about button.more:focus,
+.about button.more:active {
+  text-decoration: underline;
+  outline: none;
 }
 
 @media (max-width: 743px) {

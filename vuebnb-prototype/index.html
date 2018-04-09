@@ -18,7 +18,9 @@
   </div>
   <div id="app">
     <div class="header">
-      <div class="header-img" :style="headerImageStyle"></div>
+      <div class="header-img" :style="headerImageStyle">
+        <button class="view-photos">View Photos</button>
+      </div>
     </div>
     <div class="container">
       <div class="heading">
@@ -28,7 +30,8 @@
       <hr>
       <div class="about">
         <h3>About this listing</h3>
-        <p>{{ about }}</p>
+        <p v-bind:class="{ contracted: contracted }">{{ about }}</p>
+        <button class="more" v-if="contracted" v-on:click="contracted = false">+ More</button>
       </div>
       <div class="lists">
         <hr>
