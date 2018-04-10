@@ -18,7 +18,7 @@
   </div>
   <div id="app">
     <div class="header">
-      <div class="header-img" :style="headerImageStyle">
+      <div class="header-img" v-on:click="modalOpen = true" v-bind:style="headerImageStyle">
         <button class="view-photos">View Photos</button>
       </div>
     </div>
@@ -61,7 +61,8 @@
         </div>
       </div>
     </div>
-    <div id="modal" v-bind:class="{ show: modalOpen }">
+    <div id="modal" v-bind:class="{ show : modalOpen }">
+      <button v-on:click="modalOpen = false" class="modal-close">&times;</button>
       <div class="modal-content">
         <img src="sample/header.jpg" alt="">
       </div>

@@ -117,6 +117,7 @@ button {
   left: 0;
   right: 0;
   z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 #modal.show {
@@ -185,6 +186,27 @@ button {
 .about button.more:active {
   text-decoration: underline;
   outline: none;
+}
+
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+}
+
+.modal-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0px 28px 8px;
+  font-size: 4em;
+  width: auto;
+  height: auto;
+  background: transparent;
+  border: 0;
+  color: #ffffff;
+  z-index: 1000;
+  font-weight: 100;
+  line-height: 1;
 }
 
 @media (max-width: 743px) {
